@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ToDoList from './todolist';
+import 'font-awesome/css/font-awesome.min.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ToDoList />
   </React.StrictMode>,
   document.getElementById('root')
 );
