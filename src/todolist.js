@@ -6,10 +6,11 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 
+
 const ToDoList = () => {
   //Use States for generating list
 	const [toDos, setTodos] = useState([]);
-  //Use State to ass a task to the list
+  //Use State to add a task to the list
 	const [task, setTask] = useState("");
 
   //Function for add task button
@@ -25,16 +26,14 @@ const ToDoList = () => {
     setTodos(editedTodos)
   }
 
-  
+ 
       //Function to count items on list 
       const countListItems = () => {
         let counter = 0
         for(let todo = 0; todo < toDos.length; todo++) {
           counter += 1
-          
         }
       return counter
-     
       }
 
 	return (
